@@ -1,0 +1,341 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.mobile {
+    display: none;
+}
+
+.img-resposive {
+    width: 100%;
+}
+
+.img-curve {
+    border-radius: 10px;
+}
+
+.text-right {
+    text-align: right;
+
+}
+
+.text-centre {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+a {
+    color: rgb(240, 96, 110);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(244, 5, 5);
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: rgb(250, 104, 104);
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.btn-primary:hover {
+    background-color: rgb(255, 42, 42);
+    color: white;
+
+}
+
+h2 {
+    color: rgb(62, 57, 57);
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.float-container {
+    position: relative;
+
+}
+
+.float-text {
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+
+}
+
+.facebook {
+    color: rgb(22, 147, 242);
+    width: 30px;
+    height: 30px;
+}
+
+.instagram {
+    color: crimson;
+    width: 30px;
+    height: 30px;
+}
+
+.twitter {
+    color: rgb(22, 147, 242);
+    width: 30px;
+    height: 30px;
+}
+
+.whatsapp {
+    color: green;
+    width: 30px;
+    height: 30px;
+}
+
+/* css for navbar section */
+
+.logo {
+    /* border: 1px solid black; */
+    /* width: 10%; */
+    float: left;
+
+}
+
+.menu {
+    line-height: 70px;
+    transition: all 0.5s;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu ul li {
+    padding: 1px;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 20px;
+}
+/* .menu ul:hover{
+    color: rgb(242, 62, 62);
+} */
+
+/* food search section */
+
+.food-search {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+
+.food-search input[type="search"] {
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+}
+
+/* css for categories */
+
+.categories {
+    padding: 4% 0;
+    background-color: rgb(245, 236, 236);
+}
+
+.box-3 {
+    /* border: 1px solid black; */
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+
+.box-3:hover {
+    cursor: pointer;
+}
+
+/* css for food menu */
+.food-menu {
+    background-color: rgb(216, 213, 213);
+    padding: 4%;
+}
+
+.food-menu.box {
+    /* border: 1px solid black; */
+    width: 42%;
+    margin: 1%;
+    padding: 3%;
+    float: left;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.food-menu-img {
+    width: 20%;
+    float: left;
+}
+
+.food-menu-dsc {
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-prices {
+    font-size: 1.2rem;
+    margin: 1% 0;
+}
+
+.food-detail {
+    font-size: 0.8rem;
+    color: rgb(92, 88, 88);
+}
+
+/* css for social */
+
+.social ul {
+    list-style-type: none;
+}
+
+.social ul li {
+    display: inline;
+    padding: 1%;
+}
+
+/* footer section  */
+
+.footer-text {
+    font-size: 15px;
+    color: rgb(89, 88, 88);
+}
+
+#close,
+#open {
+    width: 30px;
+    height: 30px;
+}
+
+/* css for mobilr size */
+
+@media only screen and (max-width:630px) {
+
+    .menu {
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        height: 100vh;
+        z-index: 10;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile {
+        display: block;
+        z-index: 20;
+    }
+
+    .logo {
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul {
+        text-align: centre;
+    }
+
+    #close {
+        display: none;
+    }
+
+    .food-search input[type="search"] {
+        width: 90%;
+        padding: 1%;
+        margin-bottom: 3%;
+    }
+
+    .btn {
+        width: 90%;
+        padding: 2%;
+    }
+
+    .food-search {
+        padding: 10% 0;
+    }
+
+    .categories {
+        padding: 20% 0;
+    }
+
+    .h2 {
+        margin-bottom: 10%;
+    }
+
+    .box-3 {
+        width: 91%;
+        margin: 4% auto;
+    }
+
+    .food-menu {
+        padding: 20% 0;
+    }
+
+    .food-menu.box {
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+
+    .social {
+        padding: 5% 0;
+    }
+}
